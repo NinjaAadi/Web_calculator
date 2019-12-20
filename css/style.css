@@ -1,0 +1,69 @@
+body{
+    background-image:linear-gradient(yellow,white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.calculator{
+    display: flex;
+    justify-content: center;
+border: 5px solid black;
+height:340px;
+display:grid;
+width:280px;   
+margin-left:38%;
+background-color:ivory ;
+margin-top:10%;
+grid-template-columns: auto auto auto auto;
+border-radius: 2%;
+
+overflow: hidden;
+}
+#disp{
+    width:100%;
+    height:45px;
+    outline: none;
+    background-image: repeating-linear-gradient(lightblue,white);
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+
+}
+
+#display{
+    width:100%;
+    grid-column: 1/ span 4;
+}
+#btn{
+    background-image:linear-gradient(darkcyan,white);
+    margin-bottom:4px;
+    outline: none;
+    padding:2px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30%;
+    margin-left:3px;
+    width:60px;
+    margin-right: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#btn:hover{
+    background-image:linear-gradient(red,black);
+    color:white;
+}
+h1{
+margin-left:35%;
+font-family: fantasy;
+}
+#btnequal{
+    background-image:linear-gradient(darkcyan,white);
+    margin-bottom:4px;
+    outline: none;
+    padding:2px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20%;
+    margin-left:3px;
+    margin-right: 3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    grid-column: 2/5;
+}

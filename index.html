@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function func() {
+            var x = document.getElementById("disp").value;
+            if(x=="")
+            {
+                alert("Please enter a value.");
+                
+            }
+            else
+            document.getElementById("disp").value = eval(x);
+        }
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+            <h1>A basic calculator</h1>
+        <div class="calculator">
+            <div id="display"><input id="disp" type="text" placeholder="0" disabled></div>
+            <button onclick="document.getElementById('disp').value += '1'" id="btn">1</button>
+             <button onclick="document.getElementById('disp').value += '2'"id="btn">2</button>
+            <button onclick="document.getElementById('disp').value += '3'"id="btn">3</button>
+            <button onclick="document.getElementById('disp').value += '+'" id="btn">+</button>
+            <button onclick="document.getElementById('disp').value += '4'" id="btn">4</button>
+            <button onclick="document.getElementById('disp').value += '5'"id="btn">5</button>
+            <button onclick="document.getElementById('disp').value += '6'" id="btn">6</button>
+            <button onclick="document.getElementById('disp').value += '-'" id="btn">-</button>
+            <button onclick="document.getElementById('disp').value += '7'"id="btn">7</button>
+            <button onclick="document.getElementById('disp').value += '8'"id="btn">8</button>
+            <button onclick="document.getElementById('disp').value += '9'"id="btn">9</button>
+            <button onclick="document.getElementById('disp').value += '*'"id="btn">*</button>
+            <button onclick="document.getElementById('disp').value += '0'"id="btn">0</button>
+            <button onclick="document.getElementById('disp').value += '.'" id="btn">.</button>
+            <button onclick="document.getElementById('disp').value =''"id="btn">c</button>
+            <button onclick="document.getElementById('disp').value += '/'"id="btn">/</button>
+            <button onclick="document.getElementById('disp').value += '00'" id="btn">00</button>
+            <button onclick="func()" id="btnequal">=</button>
+
+
+        </div>
+        </div>
+    
+</body>
+</html>
